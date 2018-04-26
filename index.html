@@ -13,9 +13,21 @@
         </div>
         <button class="addOption">Tryck för att skicka</button>
     </div>
+    <div class="resultSection"></div>
     <button>Kör!</button>
   <div>
     <img src="http://mariagrip.se/wp-content/uploads/2011/10/bygrip1.jpg?w=150">
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $(function() {
+    $('.resultSection').hide()
+
+    var add_option = function() {
+      $('.inputs').append('<input></input>')
+    }
+    $('.addOption').click(add_option)
+  })
+  </script>
 </body>
 </html>
